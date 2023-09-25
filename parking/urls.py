@@ -10,5 +10,6 @@ urlpatterns = [
     path("parking_expose_corr/", views.parking_expose_corr),
     path("transportation/", views.transportation),
     path("weather_corr/", views.weather_corr),
+    path("weather_corr/4_1/", views.weather_corr4_1),
     path("reference/",views.reference)
 ]

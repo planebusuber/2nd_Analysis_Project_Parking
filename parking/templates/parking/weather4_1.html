@@ -1,0 +1,33 @@
+{% extends "parking/base.html" %}
+
+{% block statistic_list %}
+{% load static %}
+<style>
+	img {
+		width: 1400px;
+		height: 600px;
+	  }
+</style>
+
+<div class="container" , style="border: 1px solid gold; padding: 10px;" >
+	<div style="border: 1px solid gold; padding: 10px;">
+		<div class="image">
+			<img src="{% static 'images/강수량비교히트맵.png' %}" alt="">
+		</div>
+	</div>
+	<div style="border: 1px solid red; padding: 10px;">
+		<ul>
+			<li>
+				<p>5개년 월별 강수량 추이를 비교 함</p>
+			</li>
+			<li>
+				<p>6~8월이 다른 달에 비해 강수량이 많은 것을 알 수 있음</p>
+			</li>
+			<li>
+				<p>강수량을 비교하기 위해 봄철과 장마철로 나눠 3~5월, 6~8월로 나눠 비교 분석을 진행</p>
+			</li>
+		</ul>
+	</div>
+</div>
+
+{% endblock %}
