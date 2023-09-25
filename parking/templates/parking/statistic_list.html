@@ -1,0 +1,84 @@
+{% extends "parking/base.html" %}
+
+{% block statistic_list %}
+{% load static %}
+		<!-- One -->
+<section id="one" class="wrapper" xmlns="http://www.w3.org/1999/html">
+				<div class="inner split">
+
+					<section>
+						<ul class="checklist"> <h2>분석 배경</h2>
+							</br>
+							<li>주차장 수에 따른 불법 주정차 적발 건수</li>
+							<li>주정차 단속 카메라 적발건과 서울 시민들의 민원신고의 상관관계</li>
+							<li>대중교통 이용량과 불법주정차 적발건의 연관성</li>
+							<li>장마와 비장마철 강수량에 따른 불법주정차 적발건수 비교</li>
+						</ul>
+					</section>
+					<section>
+						<h2>데이터 분석 자료 </h2>
+						</br>
+						<h5>참고 자료</h5>
+
+						<ul class="actions">
+						</ul>
+					</section>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2 alt">
+				<div class="inner">
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/pic01.jpg' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>Ipsum pharetra tempus</h3>
+							<p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+							<ul class="actions">
+								<li><a href="/parking_count_map/" class="button alt">Details</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/pic02.jpg' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>Magna consequat felis</h3>
+							<p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+							<ul class="actions">
+								<li><a href="/parking_expose_corr/" class="button alt">Details</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/pic03.jpg' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>Vitae placerat adipiscing</h3>
+							<p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+							<ul class="actions">
+								<li><a href="weather_corr" class="button alt">Details</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static '#' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>Vitae placerat adipiscing</h3>
+							<p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+							<ul class="actions">
+								<li><a href="/transportation/" class="button alt">Details</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+{% endblock %}
