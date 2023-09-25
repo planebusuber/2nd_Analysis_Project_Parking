@@ -1,0 +1,45 @@
+{% extends "parking/base.html" %}
+
+{% block parking_count_detail_list %}
+{% load static %}
+
+<section id="one" class="wrapper text-white" style= "background-color:#49476e;" xmlns="http://www.w3.org/1999/html">
+				<div class="inner split">
+					<section>
+						<h2>1. 서울시 구별 주차장 수에 따른</h2>
+						<h2>불법 주정차 적발 건</h2>
+					</section>
+				</div>
+			</section>
+			<section id="two" class="wrapper style2 alt">
+				<div class="inner">
+
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/min_parking_count.png' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>구별 주차장 개수 지도 시각화 </h3>
+							<p>강남, 서초, 영등포, 마포 중구, 강서와 같이 유동 인구가 많은 곳이 주차장 수가 많은 것을 확인 할 수 있음.</p>
+							<ul class="actions">
+								<li><a href="/parking_count_map/" class="button special">상세보기</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/min_seoul_circle.png' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>구별 주차장 갯수와 주정차 적발 서클마커</h3>
+							<p>강남, 서초, 중구가 눈에 띄게 많은 적발률을 보이고 있음. </p>
+							<ul class="actions">
+								<li><a href="/seoul_circle/"  class="button special">상세보기</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="/statistic_list/" class="button special">이전 페이지</a>
+			</section>
+
+{% endblock %}
