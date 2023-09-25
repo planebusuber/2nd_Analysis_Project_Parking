@@ -38,6 +38,9 @@ def transportation(request):
 def weather_corr(request):
     return render(request, template_name = "parking/weather_corr.html")
 
+def weather_corr4_1(request):
+    return render(request, template_name = "parking/weather4_1.html")
+
 def reference(request):
     return render(request, template_name = "parking/reference.html")
 
