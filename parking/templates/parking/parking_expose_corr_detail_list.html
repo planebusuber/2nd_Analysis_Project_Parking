@@ -1,0 +1,44 @@
+{% extends "parking/base.html" %}
+
+{% block parking_expose_corr_detail_list %}
+{% load static %}
+
+<section id="one" class="wrapper text-white" style= "background-color:#49476e;" xmlns="http://www.w3.org/1999/html">
+				<div class="inner split">
+					<section>
+						<h2>2. 단속 카메라 적발과 </h2>
+						<h2>서울시 민원신고와의 상관관계</h2>
+					</section>
+				</div>
+			</section>
+			<section id="two" class="wrapper style2 alt">
+				<div class="inner">
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/newplot.png' %}" alt="">
+						</div>
+						<div class="content">
+							<h3> 제목</h3>
+							<p> 내용 </p>
+							<ul class="actions">
+								<li><a href="/parking_expose_corr/" class="button special">상세보기</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="spotlight">
+						<div class="image">
+							<img src="{% static 'images/min_seoul_circle.png' %}" alt="">
+						</div>
+						<div class="content">
+							<h3>구별 주차장 갯수와 주정차 적발 서클마커</h3>
+							<p>강남, 서초, 중구가 눈에 띄게 많은 적발률을 보이고 있음. </p>
+							<ul class="actions">
+								<li><a href="/seoul_circle/"  class="button special">상세보기</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="/statistic_list/" class="button special">이전 페이지</a>
+			</section>
+
+{% endblock %}
