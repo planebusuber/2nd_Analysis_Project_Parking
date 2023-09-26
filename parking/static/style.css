@@ -1,8 +1,9 @@
 
-#wrapper{
-  height : 100%;
+#wrap{
+	min-height: 100%;
+	position: relative;
 }
 footer{
-  position : relative;
-  transform : translateY(-100%);
+position: relative;
+transform: translatY(-100%);
 }
