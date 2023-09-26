@@ -66,3 +66,7 @@ def reference(request):
 
 def parking_expose(request):
     return render(request, template_name = "parking/parking_expose.html")
+
+
+def parking_expose_corr_map(request):
+    return render(request, template_name="parking/parking_expose_corr_map.html")

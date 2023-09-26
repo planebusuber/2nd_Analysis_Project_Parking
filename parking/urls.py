@@ -24,4 +24,5 @@ urlpatterns = [
     path("weather_corr/4_4/", views.weather_corr4_4),
     path("reference/",views.reference),
     path("parking_expose/", views.parking_expose),
+    path("parking_expose_corr_map/", views.parking_expose_corr_map),
 ]

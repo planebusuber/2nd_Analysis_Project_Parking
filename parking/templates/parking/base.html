@@ -11,7 +11,7 @@
 		<link href="{% static 'bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-	{% include "parking/nav.html" %} <!-- nav바 -->
+	{% include "parking/nav.html" %} <!-- nav -->
 
 	{% block contents %} <!-- 목차 -->
 	{% endblock %}
@@ -28,22 +28,28 @@
 	{% block count_map %} <!-- 구별 주차장 맵 -->
 	{% endblock %}
 
-	{% block parking_expose %}
+	{% block parking_expose %} <!-- -->
 	{% endblock %}
 
-	{% block parking_expose_corr %}
+	{% block parking_expose_corr %} <!-- -->
 	{% endblock %}
 
-	{% block parking_count_detail_list %}
+	{% block parking_count_detail_list %} <!-- 1번 분석 상세 페이지 -->
 	{% endblock %}
 
-	{% block seoul_circle %}
+	{% block seoul_circle %} <!--1번 분석 2번 -->
 	{% endblock %}
 
-	{% block parking_expose_corr_detail_list %}
+	{% block parking_expose_corr_detail_list %} <!-- -->
 	{% endblock %}
 
-	{% block transportation %}
+	{% block transportation %} <!-- 3번 분석 상세 페이지 -->
+	{% endblock %}
+
+	{% block parking_expose_corr_map %} <!-- CCTV 지역구 맵 -->
+	{% endblock %}
+
+	{% block reference %} <!-- REFERENCE -->
 	{% endblock %}
 
 		<!-- Scripts -->
