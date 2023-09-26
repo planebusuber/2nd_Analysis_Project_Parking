@@ -1,10 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "parking/base.html" %}
 
-</body>
-</html>
+{% block transportation %}
+{% load static %}
+		<!-- One -->
+		<section id="one" class="wrapper text-white" style= "background-color:#49476e;" xmlns="http://www.w3.org/1999/html">
+             <div class="inner split">
+                <section>
+					<h2>3. 대중교통 이용량과</h2>
+					<h2>&nbsp;&nbsp;&nbsp;불법주정차 적발건수의 연관성</h2>
+                </section>
+			 </div>
+		</section>
+		<!-- Two -->
+		<section id="two" class="wrapper style2 alt">
+			<div class="inner">
+				<div class="spotlight">
+					<div class="image">
+						<img src="{% static 'images/주차장_불법_대중.jpg' %}" alt="">
+					</div>
+					<div class="content">
+						<h3>1. 서울시 자치구별 주차장수와 3개년 불법주정차 적발 및 대중교통 하차량 상관관계 </h3>
+						<p>주차장 수와 불법주정차 적발 건수, 주차장 수와 대중교통 하차량, 불법주정차 적발 건수와 대중교통 하차량 모두 상관관계 확인 </p>
+						<ul class="actions">
+							<li><a href="/transportation/transportation_illegal/" class="button special">상세보기</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="spotlight">
+					<div class="image">
+						<img src="{% static 'images/public_ill.png' %}" alt="">
+					</div>
+					<div class="content">
+						<h3>2. 대중교통 하차량과 불법주정차 적발건수</h3>
+						<p>상관관계 0.77로 유의미한 관계 확인</p>
+						<ul class="actions">
+							<li><a href="/transportation/public_illegal/" class="button special">상세보기</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="spotlight">
+					<div class="image">
+						<img src="{% static 'images/gu_trans_illegal.png' %}" alt="">
+					</div>
+					<div class="content">
+						<h3>3. 자치구별 불법주정차 적발건수 및 대중교통 하차량</h3>
+						<p>자치구는 주창장수 내림차순으로 정렬</p>
+						<ul class="actions">
+							<li><a href="/transportation/gu_trans_illegal/" class="button special">상세보기</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="spotlight">
+					<div class="image">
+						<img src="{% static 'images/parking_illegal.png' %}" alt="">
+					</div>
+					<div class="content">
+						<h3>4. 주차장수와 불법주정차 적발건수</h3>
+						<p>0.81~0.87사이의 값으로 유의미한 상관관계 존재 확인</p>
+						<ul class="actions">
+							<li><a href="/transportation/parking_illegal/" class="button special">상세보기</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="spotlight">
+					<div class="image">
+						<img src="{% static 'images/parking_transportation.png' %}" alt="">
+					</div>
+					<div class="content">
+						<h3>5. 주차장수와 대중교통 하차량</h3>
+						<p>0.69~0.72로 유의미한 상관관계 존재 확인</p>
+						<ul class="actions">
+							<li><a href="/transportation/parking_transportation/" class="button special">상세보기</a></li>
+						</ul>
+					</div>
+				</div>
+    			<div style="padding-right: 100px;">
+    				<a href="/statistic_list/" class="button special float-end">← 이전 페이지</a>
+				</div>
+<br><br><br>
+			</div>
+		</section>
+{% endblock %}

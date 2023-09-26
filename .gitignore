@@ -20,3 +20,11 @@ Django/date/migrations/
 /Users/planebusuber/Desktop/ju_chat_ang/shut_the_parking/__pycache__/urls.cpython-311.pyc
 parking/__pycache__/urls.cpython-311.pyc
 parking/__pycache__/views.cpython-311.pyc
+parking/__pycache__/__init__.cpython-311.pyc
+parking/__pycache__/admin.cpython-311.pyc
+parking/__pycache__/apps.cpython-311.pyc
+parking/__pycache__/models.cpython-311.pyc
+shut_the_parking/__pycache__/__init__.cpython-311.pyc
+shut_the_parking/__pycache__/settings.cpython-311.pyc
+shut_the_parking/__pycache__/urls.cpython-311.pyc
+shut_the_parking/__pycache__/wsgi.cpython-311.pyc
