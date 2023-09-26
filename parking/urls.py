@@ -13,11 +13,10 @@ urlpatterns = [
     path("parking_expose_corr_detail_list/",views.parking_expose_corr_detail_list),
     path("transportation/", views.transportation),
     path("weather_corr/", views.weather_corr),
-<<<<<<< HEAD
-    path("reference/",views.reference),
-
-=======
     path("weather_corr/4_1/", views.weather_corr4_1),
+    path("weather_corr/4_2/", views.weather_corr4_2),
+    path("weather_corr/4_3/", views.weather_corr4_3),
+    path("weather_corr/4_4/", views.weather_corr4_4),
     path("reference/",views.reference)
->>>>>>> geon01
+
 ]

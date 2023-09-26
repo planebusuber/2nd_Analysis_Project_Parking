@@ -1,0 +1,32 @@
+{% extends "parking/base.html" %}
+
+{% block statistic_list %}
+{% load static %}
+
+
+<div class="container" , style="border: 1px solid gold; padding: 10px;" >
+	<div style="border: 1px solid gold; padding: 10px;">
+        <div>
+            <img src="{% static 'images/강수량과 대중교통이용자수 비교.png' %}" style="width:700px; height:500px;border: 1px solid gold;" alt="">
+            <img src="{% static 'images/대중교통 이용자수와 강수량의 상관관계.png' %}" style="width:550px; height:500px;border: 1px solid gold;" alt="">
+        </div>
+	</div>
+</div>
+<div class="container", style="border: 1px solid gold; padding: 10px;">
+	<div style="border: 1px solid red; padding: 10px;">
+		<ul>
+			<li>
+				<p>강수량에 따른 대중교통 이용자수 비교</p>
+			</li>
+			<li>
+				<p>월별 강수량에 따른 대중교통 이용에는 낮은 상관성을 나타냄</p>
+			</li>
+			<li>
+				<p>3~6월 대중교통이용량이 전반적으로 증가하는 것으로 보아 학생들의 개강과 연관이 있을 것으로 예상</p>
+			</li>
+		</ul>
+	</div>
+	<a href="/weather_corr/" class="button special"  style="float:right;" >상세보기 →</a>
+</div>
+
+{% endblock %}

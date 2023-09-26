@@ -2,87 +2,69 @@
 
 {% block statistic_list %}
 {% load static %}
-		<!-- One -->
+<!-- 타이틀 -->
 <section id="one" class="wrapper text-white" style= "background-color:#49476e;" xmlns="http://www.w3.org/1999/html">
-             <div class="inner split">
-                <section>
-                   <h2>4. 기상에 따른 </h2>
-                   <h2>불법 주정차 적발 건</h2>
-                </section>
-             </div>
-          </section>
-						<ul class="checklist"> <h2>기준 및 가설 설정</h2>
-							</br>
-							<li>0. 왜 ? 장마철과 비장마철을 기준으로 정했는지</li>
-							<li>1. 강수량이 많으면 불법주정차 건수가 높게 나타날 것으로 예상 </li>
-							<li>2. 강수량에 따른 대중교통 이용자수의 차이가 발생할 것으로 예상</li>
-							<li>3. 장마철과 비장마철 지역구 별 불법주정차 비교 </li>
-						</ul>
-					</section>
-					<section>
-						<h2>데이터 분석 자료 </h2>
-						</br>
-						<h5>참고 자료</h5>
+	<div class="inner split">
+		<section>
+			<h2>4. 기상에 따른 </h2>
+			<h2>불법 주정차 적발 건</h2>
+		</section>
+	</div>
+</section>
 
-						<ul class="actions">
-						</ul>
-					</section>
-				</div>
-			</section>
 
-		<!-- Two -->
-			<section id="two" class="wrapper style2 alt">
-				<div class="inner">
-					<div class="spotlight">
-						<div class="image">
-							<img src="{% static 'images/강수량비교히트맵.png' %}" alt="">
-						</div>
-						<div class="content">
-							<h3>연도별 월별 강수량 비교</h3>
-							<p>5개년 월별 강수량을 히트맵을 통해 비교하여 장마철과 비장마철의 기준을 선정하였다.</p>
-							<ul class="actions">
-								<li><a href="/weather_corr/4_1/" class="button alt">Details</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="spotlight">
-						<div class="image">
-							<img src="{% static 'images/기상과 불법주정차단속의 상관관계.png' %}" alt="">
-						</div>
-						<div class="content">
-							<h3>기상에 따른 불법주정차 비교</h3>
-							<p>기상 악화가 불법주정차 적발에 미치는 영향을 비교하기 위한 데이터 분석</p>
-							<ul class="actions">
-								<li><a href="/parking_expose_corr/" class="button alt">Details</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="spotlight">
-						<div class="image">
-							<img src="{% static 'images/강수량과 대중교통이용자수 비교.png' %}" alt="">
-						</div>
-						<div class="content">
-							<h3>강수량에 따른 대중교통 이용자수 비교</h3>
-							<p>강수량이 많아짐에 따라 대중교통 이용자 수가 늘어나고 자동차 이용이 줄어들 것으로 예상 </p>
-							<ul class="actions">
-								<li><a href="weather_corr" class="button alt">Details</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="spotlight">
-						<div class="image">
-							<img src="{% static 'images/강수량과 지역별 불법주정차 산점도.png' %}" alt="">
-						</div>
-						<div class="content">
-							<h3>장마철과 비장마철 지역별 불법주정차 비교</h3>
-							<p>강수량에 따른 지역별 불법주정차 건수의 차이가 날 것으로 예상 </p>
-							<ul class="actions">
-								<li><a href="/transportation/" class="button alt">Details</a></li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
+<!-- 데이터 분석 정리 -->
+<section id="two" class="wrapper style2 alt">
+	<div class="inner">
+		<div class="spotlight">
+			<div class="image">
+				<img src="{% static 'images/강수량비교히트맵.png' %}" alt="">
+			</div>
+			<div class="content">
+				<h3>연도별 월별 강수량 비교</h3>
+				<p>5개년 월별 강수량을 히트맵을 통해 비교하여 장마철과 비장마철의 기준을 선정하였다.</p>
+				<ul class="actions">
+					<li><a href="/weather_corr/4_1/" class="button special">상세보기</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="spotlight">
+			<div class="image">
+				<img src="{% static 'images/기상과 불법주정차단속의 상관관계.png' %}" alt="">
+			</div>
+			<div class="content">
+				<h3>기상에 따른 불법주정차 비교</h3>
+				<p>기상 악화가 불법주정차 적발에 미치는 영향을 비교하기 위한 데이터 분석</p>
+				<ul class="actions">
+					<li><a href="/weather_corr/4_2/" class="button special">상세보기</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="spotlight">
+			<div class="image">
+				<img src="{% static 'images/강수량과 대중교통이용자수 비교.png' %}" alt="">
+			</div>
+			<div class="content">
+				<h3>강수량에 따른 대중교통 이용자수 비교</h3>
+				<p>강수량이 많아짐에 따라 대중교통 이용자 수가 늘어나고 자동차 이용이 줄어들 것으로 예상 </p>
+				<ul class="actions">
+					<li><a href="/weather_corr/4_3/" class="button special">상세보기</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="spotlight">
+			<div class="image">
+				<img src="{% static 'images/강수량과 지역별 불법주정차 산점도.png' %}" alt="">
+			</div>
+			<div class="content">
+				<h3>장마철과 비장마철 지역별 불법주정차 비교</h3>
+				<p>강수량에 따른 지역별 불법주정차 건수의 차이가 날 것으로 예상 </p>
+				<ul class="actions">
+					<li><a href="/weather_corr/4_4/" class="button special">상세보기</a></li>
+				</ul>
+			</div>
+		</div>
+	<a href="/statistic_list/" class="button special">← 이전 페이지</a>
+	</div>
+</section>
 {% endblock %}
