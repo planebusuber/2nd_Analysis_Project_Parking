@@ -44,7 +44,5 @@ def weather_corr4_1(request):
 def reference(request):
     return render(request, template_name = "parking/reference.html")
 
-
-
-
-
+def parking_expose(request):
+    return render(request, template_name = "parking/parking_expose.html")
