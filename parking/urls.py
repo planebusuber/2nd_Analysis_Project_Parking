@@ -22,5 +22,6 @@ urlpatterns = [
     path("weather_corr/4_2/", views.weather_corr4_2),
     path("weather_corr/4_3/", views.weather_corr4_3),
     path("weather_corr/4_4/", views.weather_corr4_4),
-    path("reference/",views.reference)
+    path("reference/",views.reference),
+    path("parking_expose/", views.parking_expose),
 ]
