@@ -47,8 +47,8 @@ def gu_trans_ill(request):
 def count_ill(request):
     return render(request, template_name = "parking/parking_illegal.html")
 
-def count_trans(request):
-    return render(request, template_name = "parking/parking_transportation.html")
+# def count_trans(request):
+#     return render(request, template_name = "parking/parking_transportation.html")
 
 def weather_corr(request):
     return render(request, template_name = "parking/weather_corr.html")
@@ -70,3 +70,6 @@ def parking_expose(request):
 
 def parking_expose_corr_map(request):
     return render(request, template_name="parking/parking_expose_corr_map.html")
+
+def solution_plan(request):
+    return render(request, template_name="parking/solution_plan.html")

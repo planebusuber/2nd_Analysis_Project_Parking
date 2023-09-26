@@ -4,16 +4,16 @@
 {% load static %}
 
 
-<div class="container" , style="border: 1px solid gold; padding: 10px;" >
-	<div style="border: 1px solid gold; padding: 10px;">
+<div class="container" , style="border: 1px solid white; padding: 10px;" >
+	<div style="border: 1px solid white; padding: 10px;">
         <div>
-            <img src="{% static 'images/강수량과 대중교통이용자수 비교.png' %}" style="width:700px; height:500px;border: 1px solid gold;" alt="">
-            <img src="{% static 'images/대중교통 이용자수와 강수량의 상관관계.png' %}" style="width:550px; height:500px;border: 1px solid gold;" alt="">
+            <img src="{% static 'images/강수량과 대중교통이용자수 비교.png' %}" style="width:750px; height:450px;border: 1px solid white;" alt="">
+            <img src="{% static 'images/대중교통 이용자수와 강수량의 상관관계.png' %}" style="width:500px; height:450px;border: 1px solid white;" alt="">
         </div>
 	</div>
 </div>
-<div class="container", style="border: 1px solid gold; padding: 10px;">
-	<div style="border: 1px solid red; padding: 10px;">
+<div class="container", style="border: 1px solid white; padding: 10px;">
+	<div style="border: 3px solid #3CB371; padding: 10px;">
 		<ul>
 			<li>
 				<p>강수량에 따른 대중교통 이용자수 비교</p>
@@ -25,8 +25,12 @@
 				<p>3~6월 대중교통이용량이 전반적으로 증가하는 것으로 보아 학생들의 개강과 연관이 있을 것으로 예상</p>
 			</li>
 		</ul>
+	<div style="padding-right: 100px;">
+		<a href="/weather_corr/" class="button special float-end">← 이전 페이지</a>
 	</div>
-	<a href="/weather_corr/" class="button special"  style="float:right;" >상세보기 →</a>
+	</br></br></br>
+	</div>
+
 </div>
 
 {% endblock %}

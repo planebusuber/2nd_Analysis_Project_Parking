@@ -5,8 +5,8 @@
 <html>
 <head><meta charset="utf-8" /></head>
 <body>
-<div class="container">
-    <div style="text-align:center">
+<center>
+    <!-- <div style="text-align:center"> -->
         <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script type="text/javascript">/**
 * plotly.js v2.12.1
@@ -79,37 +79,30 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
         <div style="text-align:center">
                 <img src="{% static 'images/corr.png' %}">
         </div>
-        <div style="padding: 10px;">
-        </br>
-        </br>
-            <ul>
-                <li>
-                    25개의 자치구의 3개년간 대중교통 하차량과 불법주정차 적발건수간의 상관관계를 분석
-                </li>
-                </br>
-                <li>
-                    강남구의 대중교통 하차량이 25개구 중 가장 많았고 중구, 종로구, 강서구의 하차량도 많았음
-                </li>
-                </br>
-                <li>
-
-                </li>
-                </br>
-                <li>
-
-                </li>
-                </br>
-                <li>
-                </li>
-            </ul>
+</center>
+<div style="padding: 10px;">
+	<div style="border: 3px solid purple; padding: 10px;">
+		<ul>
+			<li>
+				<p>유동인구 수를 대중교통 이용량으로 보고 주차장 수를 대중교통 이용량 중 하차율로 대체</p>
+			</li>
+			<li>
+				<p>주정차적발이 되었다는 얘기는 곧 목적지에 도착해서 주차를 했다는 얘기로
+                자차 이용이 아닌 대중교통을 이용해 주거지가 아닌 목적지에 도착하는 것으로 또 다른 분석을 하고자 함</p>
+			</li>
+			<li>
+				<p>25개의 자치구의 3개년간 대중교통 하차량과 불법주정차 적발건수간의 상관관계를 분석</p>
+			</li>
+			<li>
+				<p>강남구의 대중교통 하차량이 25개구 중 가장 많았고 중구, 종로구, 강서구의 하차량도 많음</p>
+			</li>
+		</ul>
+        <div style="padding-right: 100px;">
+            <a href="/transportation/" class="button special float-end">← 이전 페이지</a>
         </div>
+	    </br></br></br>
     </div>
-    <div style="padding-right: 100px;">
-        <a href="/transportation/" class="button special float-end">← 이전 페이지</a>
-    </div>
-    </br>
-    </br>
-    </br>
+</div>
     </body>
 </html>
 {% endblock %}

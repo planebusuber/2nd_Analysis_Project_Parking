@@ -16,7 +16,7 @@ urlpatterns = [
     path("transportation/public_illegal/", views.public_ill),
     path("transportation/gu_trans_illegal/", views.gu_trans_ill),
     path("transportation/parking_illegal/", views.count_ill),
-    path("transportation/parking_transportation/", views.count_trans),
+    # path("transportation/parking_transportation/", views.count_trans),
     path("weather_corr/", views.weather_corr),
     path("weather_corr/4_1/", views.weather_corr4_1),
     path("weather_corr/4_2/", views.weather_corr4_2),
@@ -25,4 +25,5 @@ urlpatterns = [
     path("reference/",views.reference),
     path("parking_expose/", views.parking_expose),
     path("parking_expose_corr_map/", views.parking_expose_corr_map),
+    path("solution_plan/", views.solution_plan)
 ]
