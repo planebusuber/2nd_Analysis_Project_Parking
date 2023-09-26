@@ -18,3 +18,5 @@ Django/date/migrations/
 
 /Users/planebusuber/Desktop/ju_chat_ang/shut_the_parking/__pycache__/settings.cpython-311.pyc
 /Users/planebusuber/Desktop/ju_chat_ang/shut_the_parking/__pycache__/urls.cpython-311.pyc
+parking/__pycache__/urls.cpython-311.pyc
+parking/__pycache__/views.cpython-311.pyc
