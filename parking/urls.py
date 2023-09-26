@@ -18,8 +18,4 @@ urlpatterns = [
     path("weather_corr/4_3/", views.weather_corr4_3),
     path("weather_corr/4_4/", views.weather_corr4_4),
     path("reference/",views.reference)
-<<<<<<< HEAD
-=======
-
->>>>>>> geon02
 ]
