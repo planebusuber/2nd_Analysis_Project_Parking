@@ -24,6 +24,21 @@ def parking_expose_corr(request):
 def transportation(request):
     return render(request, template_name = "parking/transportation.html")
 
+def trans_ill(request):
+    return render(request, template_name = "parking/transportation_illegal_corr.html")
+
+def public_ill(request):
+    return render(request, template_name = "parking/public_illegal.html")
+
+def gu_trans_ill(request):
+    return render(request, template_name = "parking/gu_transportation_illegal.html")
+
+def count_ill(request):
+    return render(request, template_name = "parking/parking_illegal.html")
+
+def count_trans(request):
+    return render(request, template_name = "parking/parking_transportation.html")
+
 def weather_corr(request):
     return render(request, template_name = "parking/weather_corr.html")
 
