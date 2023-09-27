@@ -25,5 +25,6 @@ urlpatterns = [
     path("reference/",views.reference),
     path("parking_expose/", views.parking_expose),
     path("parking_expose_corr_map/", views.parking_expose_corr_map),
-    path("solution_plan/", views.solution_plan)
+    path("solution_plan/", views.solution_plan),
+    path("last_page/", views.last_page),
 ]

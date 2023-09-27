@@ -1,8 +1,17 @@
 {% extends 'parking/solution_base.html' %}
 {% block solution_plan %}
 {% load static %}
-<section id="banner">
+<section id="one" class="wrapper text-white" style= "background-color:#49476e;" xmlns="http://www.w3.org/1999/html">
     <div class="inner split">
+        <section>
+            <h2>SOLUTION PLAN</h2>
+
+        </section>
+    </div>
+</section>
+
+<div class="inner split">
+    <section>
         <section>
             <div class="slider">
                 <input type="radio" name="slide" id="slide1" checked>
@@ -18,31 +27,32 @@
                 </div>
             </div>
         </section>
-    </div>
-
+    </section>
         <section>
-        <div class="container">
-            <div class="float-end">
-                <h2>결론</h2>
-                <p>불법주정차는 대중교통 이용, 주자창의 수, 날씨와는 상관이 없음</p>
-                <p>국민신문고 제도 활성화 방안을 모색</p>
-                <p>걍 시민의식이 똥이었음;;;;;</p>
-
-                <h3>해결방안</h3>
-                <p>불법주정차 관련 법률 세부화</p>
-                <p>불법주정차 적발 시 법칙금 상향</p>
-                <p>불법주정차 시에 발생하는 사고과실 비율 재조정</p>
-                <p>면허 딸 때 애초에 교육</p>
-                <p>단속시간 연장</p>
-                <p>불시단속</p>
-                <p>민원 시 포상금</p>
-                <p>걍 신고하세요</p>
-            </div>
+        </br>
+            <h2>결론</h2>
+             </br>
+             <p>1. 처음 가설 설정과 달리 주차장 개수와 불법주정차는 비례 관계를 나타냄.</p>
+             <p>2. 불법 주정차 CCTV가 많다고 해서 불법주정차가 줄어드는 것은 아님.</p>
+             <p>3. 대중교통 이용량이 많으면 차량 이용이 적어져 불법주정차 적발이 줄어들 것이라고 예상했지만, 결론적으로 유동인구가 많은 곳에서 적발이 많게 나타남 </p>
+             <p>4. 기상에 따른 불법주정차 적발건수는 상관관계가 나타나지 않았음</p>
+             </br>
+             <h2>최종결론 </h2>
+            </br>
+             <p>민원신고가 늘어남에 따라 불법주정차 적발 건수가 </p>
+             <p>줄어드는 음의 상관관계가 나타나는 것으로 보아</p>
+             <p>주정차 적발에 대한 시민들의 신고율을 높이는 방안을 모색해야 함.</p>
+             <hr>
+             </br>
         </div>
     </section>
+    <div style="padding-right: 100px;">
+        <a href="/last_page/" class="button special float-end">다음 페이지 →</a>
+    </div>
+</div>
     </br></br></br></br></br></br></br></br></br></br></br></br></br>
     </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-</section>
+
     {% include 'parking/footer.html' %}
     <div class="modal">
 		<button>&times;</button>
@@ -69,10 +79,9 @@
 
             <style>
             .slider{
-                width: 600px;
+                width: 400px;
                 height: 480px;
                 position: absolute;
-                left: 20px;
                 margin: 0;
                 background-size: 300px;
             }
@@ -206,6 +215,8 @@
                 padding: .2rem;
             }
 
+
+
             </style>
 
             <script>
@@ -240,6 +251,11 @@
                   $(".modal").hide();
                 }
               });
+            });
+
+
+            $(document).ready(function(){
+              $('.slider').slider();
             });
             </script>
 {% endblock %}

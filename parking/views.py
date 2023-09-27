@@ -73,3 +73,6 @@ def parking_expose_corr_map(request):
 
 def solution_plan(request):
     return render(request, template_name="parking/solution_plan.html")
+
+def last_page(request):
+    return render(request, template_name="parking/last_page.html")
