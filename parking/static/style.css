@@ -7,3 +7,6 @@ footer{
 position: relative;
 transform: translatY(-100%);
 }
+a {
+  text-decoration-line: none;
+}
